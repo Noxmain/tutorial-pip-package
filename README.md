@@ -26,13 +26,13 @@ mypackage/
     __init__.py
 ```
 
-Rename your module to be `__init__.py` within the `mymodule` directory.
+Name your module `__init__.py` within the `mymodule` directory.
 
 Create a `README.txt` file containing a summary of what your Python package is all about.
 
-Choose a `LICENSE` for your module. There are many licenses to choose from, but my personal favourite is the MIT license because it does not have many restrictions and it is simple. Other suitable licenses for Python modules would be BSD, Apache or LGPL. I would not use the GPL license for a Python package because any projects that use it are forced to use the GPL license too. This may prevent some people from being able to use your library.
+Choose a `LICENSE` for your module.
 
-Create a `setup.py` file. This is a script that is used to compile your package and submit it to PyPI. Here is a very simple example:
+Create a `setup.py` file. This is a script that is used to compile your package and submit it to PyPI. Here is an example:
 ```python
 import setuptools
 
