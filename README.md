@@ -1,4 +1,4 @@
-# Creating a Python Package
+# Creating a pip Package
 
 * [Requirements](#requirements)
 * [Setup](#setup-your-package)
@@ -14,7 +14,7 @@ pip3 install --upgrade twine
 ```
 
 # Setup your package
-Make sure your module contains docstrings for every function, and for the module itself. This is very useful for many reasons as we will see later – after all people need to know how to use your Python module.
+Make sure your module contains docstrings for every function, and for the module itself. This is very useful after all people need to know how to use your Python module.
 
 Create a directory for your package which will contain the following files:
 ```
@@ -28,7 +28,7 @@ mypackage/
 
 Name your module `__init__.py` within the `mymodule` directory.
 
-Create a `README.txt` file containing a summary of what your Python package is all about.
+Create a `README.txt` file containing a summary of what your pip package is all about.
 
 Choose a `LICENSE` for your module.
 
@@ -36,25 +36,25 @@ Create a `setup.py` file. This is a script that is used to compile your package 
 ```python
 import setuptools
 
-classifiers=[
+classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
 setuptools.setup(
-    name='mypackage',
-    version='1.0.0',
-    description="A short description",
-    long_description=open("README.md", "r").read(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/Noxmain/NoxmainNetwork",
-    author="Noxmain",
-    author_email="noah.finalcut@gmail.com",
-    license='MIT',
-    classifiers=classifiers,
-    packages=setuptools.find_packages(),
-    install_requires=['']
+    name = 'mypackage',
+    version = '1.0.0',
+    description = "A short description",
+    long_description = open("README.md", "r").read(),
+    long_description_content_type = "text/markdown",
+    url = "https://github.com/Your name",
+    author = "Your name",
+    author_email="Your email adress",
+    license = 'MIT',
+    classifiers = classifiers,
+    packages = setuptools.find_packages(),
+    install_requires = ['']
 )
 ```
 For the list of classifiers that you can use, see https://pypi.python.org/pypi?%3Aaction=list_classifiers. Use as many as you think is relevant to your package.
