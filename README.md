@@ -87,5 +87,5 @@ pip3 install mypackage
 ```
 
 # Links
-https://www.wyre-it.co.uk/blog/creating-a-python-package/
-https://packaging.python.org/tutorials/packaging-projects/
+* https://www.wyre-it.co.uk/blog/creating-a-python-package/
+* https://packaging.python.org/tutorials/packaging-projects/
